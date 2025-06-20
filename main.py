@@ -15,7 +15,7 @@ def main():
 
     try:
         length = int(input("Enter desired password length(e.g. 12): "))
-        if length <= 0:
+        if length <= 8:
             raise ValueError("Length must be a positive number!")
 
         password = generate_password(length)
